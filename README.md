@@ -17,12 +17,9 @@ A simple real-time chat application built using the MERN stack (MongoDB, Express
 - **Database:** MongoDB (optional, if message persistence is implemented)
 - **WebSocket:** Socket.io (for real-time communication)
 
-## Installation
-
-Follow these steps to get your development environment running:
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chat-app.git
-cd chat-app
+git clone https://github.com/AndelaDujmov/FlowTalk
+cd FlowTalk
