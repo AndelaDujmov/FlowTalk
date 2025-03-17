@@ -17,6 +17,10 @@ A simple real-time chat application built using the MERN stack (MongoDB, Express
 - **Database:** MongoDB (optional, if message persistence is implemented)
 - **WebSocket:** Socket.io (for real-time communication)
 
+## Installation
+
+Follow these steps to get your development environment running:
+
 
 ### 1. Clone the Repository
 
