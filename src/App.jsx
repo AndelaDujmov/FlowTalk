@@ -1,20 +1,18 @@
-import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import MainMenu from "./components/MainMenu/MainMenu";
-import NavBar from "./components/MainMenu/NavBar/navBar";
-
+import ChatWindow from "./components/ChatWindow/ChatWindow";
 
 function App() {
-  const [mode, setMode] = useState("light");
 
   return (
-    <div className={`app-container ${mode}`}>
-      <NavBar >
-      <button className="mode-toggle" onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-        Switch to {mode === "light" ? "Dark" : "Light"} Mode
-      </button>
-      <MainMenu />
-      </NavBar>
+    <div className="app-container">
+     
+      <Routes>
+        <Route path="/" element={<MainMenu />}/>
+        <Route path="/chat" element={<ChatWindow />}/>
+      </Routes>  
+    
     </div>
   );
 }

@@ -12,13 +12,12 @@ const MainMenu = (userType) => {
       useEffect(() => {
         if (visited)
           setColor("purple")
-    
       }, [visited])
     
 
     return (
         <div>
-            <AcceptButton value="Start The Chat" color={color} action={changeVisited} img={'../images/mainMenu.png'}/>
+            <AcceptButton value="Start The Chat" color={color} action={changeVisited}/>
         </div>
     )
 }
